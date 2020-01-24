@@ -1,2 +1,2 @@
-# 3013-Algorithms-Scotland
+# 3013-ALG-Scotland
 MSU Algorithm Class
