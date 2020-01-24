@@ -5,4 +5,4 @@ MSU Algorithm Class
 #### Repo: 3013 Algorithms Repo
 #### Email: micahlyns@gmail.com
 #### Image:
-#### Avatar:  ![](images/IMG2.jpg)
+#### Avatar:  ![](https://github.com/Micah-Lyn/images/blob/master/IMG2.jpg)
