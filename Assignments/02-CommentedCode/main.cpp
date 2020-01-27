@@ -11,10 +11,8 @@
 //       This program implements a class that allows a linked list to be used similar to
 //       an array. It overloads the "[]" (square brackets) to simulate accessing seperate 
 //       array elements, but really it traverses the list to find the specified node using
-//       an index value. It also overloads the "+" and "-" signs allowing a user to "add"
-//       or "push" items onto the end of the list, as well as "pop" items off the end of our 
-//       array. This class is not meant to replace the STL vector library, its simply a project
-//       to introduce the beginnings of creating complex / abstract data types. 
+//       an index value. It also overloads the "+" to join lists together and "push"to add  
+//	 items onto the end of the list, as well as "pop" items off the end of our array. 
 //       
 // Usage: 
 //      - $ ./main filename
@@ -86,9 +84,9 @@ struct Node {
  */
 class List {
 private:
-	Node* Head;		   // Pointer to Head
-	Node* Tail;		   // Pointer to Tail(end of list)
-	int Size;		   // Number of items in List 
+     Node* Head;		   // Pointer to Head
+     Node* Tail;		   // Pointer to Tail(end of list)
+     int Size;		  	   // Number of items in List 
 
 public:
    /**
