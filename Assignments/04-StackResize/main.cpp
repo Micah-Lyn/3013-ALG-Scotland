@@ -214,7 +214,7 @@ public:
     }
 
     /**
-     * Public void: Container Grow
+     * Public void: ContainerGrow
      *
      * Description:
      *      Grows the container for the stack by 1.75
@@ -250,7 +250,7 @@ public:
     }
 
     /**
-     * Public void: Container Shrink
+     * Public void: ContainerShrink
      *
      * Description:
      *      Grows the container for the stack by .5
@@ -281,7 +281,7 @@ public:
     }
 
     /**
-     * Public void: Container Grow
+     * Public void: CheckResize
      *
      * Description:
      *      Computes ratio of stack and grows or shrink stack accordingly
