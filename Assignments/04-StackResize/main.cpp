@@ -313,24 +313,19 @@ public:
 // Simple Array Based Stack Usage:
 int main() {
     ArrayStack stack;
-    int r = 0;
-
     int num = 0;
-
-    ifstream in("nums_test.dat");
     
+    ifstream in("nums_test.dat");
 
     while (!in.eof()) {
 
         in >> num;
 
         if (num % 2 == 0) {         // if the number is even it is pushed onto stack
-            stack.Push(num);
-            
+            stack.Push(num);   
         }
         else {                      // value at top of stack is popped
-            stack.Pop();
-            
+            stack.Pop(); 
         }
     }
     stack.Print();                  // prints result of program
