@@ -299,7 +299,7 @@ public:
         double ratio = (double) half / size;  // computes ratio
 
         if (ratio < .5) {                     // if ratio is less than .5, growth is
-            if (growth >= 1 && size > 1) {    // more than one and size is more than 1, 
+            if (growth >= 1 && size > 10) {    // more than one and size is more than 10, 
                 ContainerShrink();            // the container shrinks
             }
         }
