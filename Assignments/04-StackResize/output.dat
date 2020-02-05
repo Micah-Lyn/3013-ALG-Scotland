@@ -1,0 +1,21 @@
+clang version 7.0.0-3~ubuntu0.18.04.1 (tags/RELEASE_700/final)
+ clang++-7 -pthread -o main main.cpp
+ ./main
+
+#####################################################################
+Assignment 4 - Resizing the Stack
+CMPS 3013
+Micah-Lyn Scotland
+
+
+Max Stack Size: 40831
+End Stack Size: 6
+Stack Resized:  33 time(s)
+
+
+#####################################################################
+
+
+
+
+
