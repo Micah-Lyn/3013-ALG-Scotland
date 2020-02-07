@@ -24,7 +24,7 @@ int main() {
         if((int)k == 10 ){
             cout<<"Enter pressed ... Word is empty\nWord: "<<endl;
             word = "";
-        }
+        }////
     }
     return 0;
 }
