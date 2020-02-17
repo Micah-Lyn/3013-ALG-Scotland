@@ -150,10 +150,10 @@ private:
      */
     void SinkDown(int index) {
          
-        while(PickChild(index) >= 1) {
-            if(index > 1 && H[index] > H[PickChild(index)]){
-                Swap(index, PickChild(index));
-                index  = PickChild(index);
+        while(PickChild(index) > 1) {
+            if(Parent(index) > PickChild(index)) {
+                Swap(Parent(index), PickChild(index));
+                index  = Parent(index);
             }
         }
     }
@@ -177,11 +177,11 @@ private:
         }
         else {
 
-            if (Right(index) >=end && Left(index) >= end) {    
-                return end-1; 
+            if (Right(index) ==end) {
+                 return Left(index);
             } 
             else { // There is a left child
-                return Left(index);
+               return 0;
             }
         } 
         
