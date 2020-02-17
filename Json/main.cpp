@@ -91,7 +91,12 @@ int main(int argc, char **argv) {
   json objWord, objDef;
   int size;
 
+
+  cout<<"hello world"<<endl;
+
   size = J->getSize();
+
+  cout<<size<<endl;
 
   J = new JsonFacade("dict_w_defs.json");
   
@@ -107,6 +112,8 @@ int main(int argc, char **argv) {
   }
 
   L.Print();
+
+  cout<<"hello"<<endl;
 
   return 0;
 }

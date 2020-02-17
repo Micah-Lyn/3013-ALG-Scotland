@@ -1,3 +1,17 @@
+///////////////////////////////////////////////////////////////////////////////
+//
+// Author:           Micah-Lyn Scotland
+// Email:            micahlyns@gmail.com
+// Label:            H02
+// Title:            Homework 02 - HeapifyDebacle
+// Course:           3013
+// Semester:         Spring 2020
+//
+// Description:
+//       Completing Functions for a heap class
+//
+/////////////////////////////////////////////////////////////////////////////////
+
 #include <iostream>
 
 using namespace std;
@@ -229,7 +243,7 @@ public:
      */
     void Print() {
         for (int i = 1; i <= end - 1; i++) {
-            cout << H[i];
+               cout << H[i];
             if (i < end - 1) {
                 cout << "->";
             }
