@@ -24,25 +24,27 @@ using namespace std;
  *          Heap        : default constructor
  *          Heap(int)   : overload constructor with heap size
  *      private:
- *          BubbleUp    : you comment this
- *          Left        : you comment this
- *          OnHeap      : you comment this
- *          Parent      : you comment this
- *          Right       : you comment this
- *          Swap        : you comment this
+ *          BubbleUp    : bubble up the heap to put values in proper order 
+ *                        by comparing the parents and children
+ *          Left        : return index of the left child
+ *          OnHeap      : verifies if an index is in the array
+ *          Parent      : get the parent of indexes
+ *          Right       : return the index of right child
+ *          Swap        : swap values on the heap
  *          /// Fix These:
- *          SinkDown    : you comment this
- *          PickChild   : you comment this
+ *          SinkDown    : bubble down the heap values to place in proper order
+ *          PickChild   : checks whether there is a child and returns smaller child
  *      public:
- *          Insert      : you comment this
- *          Print       : you comment this
- *          Remove      : you comment this
+ *          Insert      : inserts values in heap 
+ *          Print       : prints values on heap
+ *          Remove      : removes value at the root of the heap
  */
 class Heap {
 private:
     int size; // size of the array
     int *H;   // array pointer
     int end;  // 1 past last item in array
+
 
     /**
    * BubbleUp
@@ -136,21 +138,7 @@ private:
     //Fix These Methods
     ////////////////////////////
 
-    /**
-     * 
-     * @param  {int*} A   :  array pointer with unsorted values to make into a heap
-     * @param  {int} size :  size of new heap
-     */
-    void Heapify(int *A, int size) {
-        // do it!
-        int j = size/2;
-
-        for(int i = j; j>=1; j--) {
-            SinkDown(i);
-        }
-    
-    }
-
+   
     /**
      * SinkDown
      * @description:
@@ -161,10 +149,9 @@ private:
      * @return              : void 
      */
     void SinkDown(int index) {
-        //do stuff!
          
-        while(PickChild(index) > 0) {
-            if(index > 0 && H[index] > H[PickChild(index)]){
+        while(PickChild(index) >= 1) {
+            if(index > 1 && H[index] > H[PickChild(index)]){
                 Swap(index, PickChild(index));
                 index  = PickChild(index);
             }
@@ -181,19 +168,17 @@ private:
      * @return              : index to child 
      */
     int PickChild(int index) {
-        //return 0; // temporary suppress of warning
-
         
-        if (H[Left(index)] > H[Right(index)]) {
+        if (H[Left(index)] < H[Right(index)]) {
             return Left(index);
         } 
-        else if (H[Right(index)] > H[Left(index)]) {
+        else if (H[Right(index)] < H[Left(index)]) {
              return Right(index);
         }
         else {
 
-            if (Right(index) == 0 && Left(index) == 0) {    //No right or left child
-                return 0; 
+            if (Right(index) >=end && Left(index) >= end) {    
+                return end-1; 
             } 
             else { // There is a left child
                 return Left(index);
@@ -222,6 +207,24 @@ public:
         H = new int[s];
         end = 1;
     }
+
+
+    /**
+     * 
+     * @param  {int*} A   :  array pointer with unsorted values to make into a heap
+     * @param  {int} size :  size of new heap
+     */
+    void Heapify(int *A, int size) {
+        // do it!
+           int i = size;
+
+        for(int j = i; j>=1; j--){
+            Insert(j);
+        }
+    }
+
+
+
 
     /**
    * Insert
@@ -268,13 +271,24 @@ public:
 
 int main() {
     Heap H;
+    //dynamically allocate space for an array
 
-    H.Insert(17);
-    H.Insert(11);
+    int size = 10;
+    int *A = new int[size];
 
-    for (int i = 1; i <= 10; i++) {
-        H.Insert(i);
+    for(int i = size; i > size; i++){
+        A[i] = i;
     }
+    H.Heapify(A, size);
+
+
+
+    // H.Insert(17);
+    // H.Insert(11);
+
+    // for (int i = 1; i <= 10; i++) {
+    //     H.Insert(i);
+    // }
 
     H.Print();
 }
