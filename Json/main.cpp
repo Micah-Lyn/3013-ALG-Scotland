@@ -4,93 +4,119 @@
 #include <string>
 #include "json.hpp"
 #include "JsonFacade.hpp"
-#include "timer.hpp"
+#include "Timer.hpp"
+#include "mygetch.hpp"
+#include <chrono>
 
 using namespace std;
 using json = nlohmann::json;
 //https://github.com/nlohmann/json
 
-struct wordNode
-{
+struct wordNode {
     string word;
     string definition;
     wordNode *next; // Pointer to the next node in the list
 
-    wordNode()
-    {
+    wordNode() {
         word = "sing";
         definition = "make musical sounds with the voice, with a set tune.";
     }
 
-    wordNode(string w, string def)
-    {
+    wordNode(string w, string def) {
         word = w;
         definition = def;
         next = NULL;
     }
 };
 
-class List
-{
+class List {
 private:
     wordNode *Head;
     wordNode *Tail;
+    string wordsV[10];
+    int count = 0;
 
 public:
-    List()
-    {
+    List() {
         Head = Tail = NULL;
     }
 
-    void Insert(string w, string def)
-    {
+    void Push(string w, string def) {
         wordNode *Temp = new wordNode(w, def);
 
-        if (!Head && !Tail)
-        {
+        if (!Head && !Tail) {
             Head = Tail = Temp;
         }
-        else
-        {
+        else {
             Tail->next = Temp;
             Tail = Temp;
         }
     }
 
-    // void Insert(string w, string def) {
-    //     // allocate new memory and init node
-    //     wordNode *Temp = new wordNode(w, def);
+    void getWord(string wordF) {
+        int size = 10, s = 0;
+        string currWord;
+		wordNode* begin = new wordNode;	
+        wordNode* end = new wordNode;	
+		begin = Head;
+        end = NULL;
+        
 
-    //       // figure out where it goes in the list
+        vector<string> wordsA;
 
-    //     Temp->next = Head;
-    //     Head = Temp;
-    //     if (!Tail) {
-    //       Tail = Head;
-    //     }
+		while (begin != end) {
 
-    //   }
+			currWord = begin->word;
+			size_t found = currWord.find(wordF);
+           
+            
+            if (found != string::npos) {
+                wordsA.push_back(currWord);
+                count = wordsA.size();
+                
+			}
 
-    void PrintTail()
-    {
+			if (found != string::npos && s < size) {
+                wordsV[s] = currWord;
+                s++;
+			}
+
+			begin = begin->next;
+		}
+        begin = end;
+        
+	}
+
+	int countWords() {
+		return count;
+	}
+    
+	
+
+    void PrintTail() {
         cout << Tail->word << ":" << Tail->definition << endl;
     }
 
-    void Print()
-    {
+    void matchingWords() {
+		for(int i = 0; i < 10; i++)
+		{
+			cout << wordsV[i] << "  ";		
+		}
+		cout << '\n';    
+	}
+
+    void Print() {
         wordNode *Temp = Head;
         string list;
 
-        while (Temp != NULL)
-        {
+        while (Temp != NULL)   {
             cout << Temp->word << ":" << Temp->definition << endl;
             Temp = Temp->next;
         }
     }
 };
 
-int main(int argc, char **argv)
-{
+int main(int argc, char **argv) {
     List L;
     JsonFacade *J;
     string objWord, objDef;
@@ -100,21 +126,47 @@ int main(int argc, char **argv)
 
     size = J->getSize();
 
-    cout << size << endl;
-
     vector<string> letters = J->getKeys();
 
-    for (int i = 0; i < size; i++)
-    {
+    for (int i = 0; i < size; i++)  {
         objWord = J->getKey(i);
-
         objDef = J->getValue(objWord);
-
-        L.Insert(objWord, objDef);
+        L.Push(objWord, objDef);
        
     }
 
-    L.Print();
+    char k;            
+    string word = "";  
 
-    return 0;
+    cout<<"Type keys and watch what happens. Type capital Z to quit."<<endl;
+
+   
+    while ((k = getch()) != 'Z') {
+        Timer T;                                 
+        T.Start();
+
+        if((int)k != 10) {   
+           word += k;
+           cout << word << endl;
+            
+        }
+         L.getWord(word); 
+
+        // hitting enter sets word back to empty
+        if((int)k == 10 ) {
+            cout<<"Enter pressed ... Word is empty\nWord: "<<endl;
+            word = "";
+           
+        }////
+        T.End();
+             
+        cout <<"\n\n"<< L.countWords() << " words found in ";
+        printf( "%.3f", T.Seconds());
+        cout <<" seconds";
+        cout << "\n\n\n";
+        L.matchingWords();                   
+        cout <<"\n\n\n";
+    }
+
+return 0;
 }

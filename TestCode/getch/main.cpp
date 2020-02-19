@@ -18,6 +18,7 @@ int main() {
         if((int)k != 10){   // if k is not a space print it
             cout << "Key: " << k << " = " << (int)k << endl;
             cout << "Word: " << word << endl;
+            
         }
 
         // hitting enter sets word back to empty

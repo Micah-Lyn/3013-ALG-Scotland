@@ -32,7 +32,6 @@
 #include <chrono> 
 #include <thread>
 
-using namespace std;
 
 typedef std::chrono::high_resolution_clock Time;
 typedef std::chrono::milliseconds Msec;

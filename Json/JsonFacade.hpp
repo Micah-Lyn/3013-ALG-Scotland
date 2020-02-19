@@ -31,9 +31,14 @@
 
 #include "json.hpp"
 
-using namespace std;
 
 using json = nlohmann::json;
+using std::string;
+using std::vector;
+using std::ifstream;
+using std::ofstream;
+using std::cout;
+using std::endl;
 
 class JsonFacade {
 private:
