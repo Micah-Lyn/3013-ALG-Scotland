@@ -18,8 +18,8 @@
 //       
 // Usage: 
 //      - $ ./main filename
-//      - This will read in a dictonary file containing values to be stored in linked list.
-//      
+//      - This will read in a dictonary file containing values to be stored in 
+//        linked list. 
 // Files:            
 //      main.cpp         : driver program 
 //      dict_w_defs.json : json input file
