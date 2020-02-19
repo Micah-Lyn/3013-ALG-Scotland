@@ -179,7 +179,7 @@ public:
 
 			currWord = begin->word;
 			size_t found = currWord.find(wordF);
-           
+    
             
             if (found != string::npos) {
                 wordsA.push_back(currWord);
