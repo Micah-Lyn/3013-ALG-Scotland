@@ -51,8 +51,7 @@ for (int I = 0; I < n; I++)
         {some_statement;}
 ```
 Ans: O(n<sup>2</sup>)
-
-    If the data set size is n, there are two for loops n * n will be O(n<sup>2</sup>)
+   - If the data set size is n, there are two for loops n * n will be O(n<sup>2</sup>)
 
 
 
@@ -64,8 +63,7 @@ for (int I = 0; I < n; I +=2)
         {some_statement;}
 ```
 Ans: O(n<sup>2</sup>)
-   
-    After removing constants n* n will be equal to n<sup>2</sup>
+   - After removing constants n* n will be equal to n<sup>2</sup>
 
 - 8C)
 ```cpp
@@ -75,7 +73,7 @@ for (int j = 1 ; j < n ; j *= 2)
         {some_statement;} 
 ```
 Ans: O(n log n)
-    j runs log n, the inner loop is n therefore the answer is O(n log n)
+   - j runs log n, the inner loop is n therefore the answer is O(n log n)
 
 
 At most, how many comparisons are required to search a sorted vector of 1023 elements using the binary
