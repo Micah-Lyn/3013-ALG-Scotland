@@ -5,7 +5,8 @@
      O(1), O(n), O(log n), O(n log n),  O(n<sup>2</sup>), O(n!)
 
 - Suppose that the complexity of an algorithm is O(n<sup>2</sup>). Suppose that the program that uses the algorithm run in 10 seconds for a data set of size n. If the data size is doubled, how long will it take (approximately) to run the program? 
-    40 seconds
+    
+    Ans: 40 seconds
 
 
 
