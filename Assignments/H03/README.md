@@ -95,7 +95,7 @@ In each of the following examples, please choose the best data structure(s).
 - 11) You need to store undo/redo operations in a word processor.
 
     Ans: Stack
-       - Last in first out principle. 
+       - Last in first out principle works well to undo and redo. 
 
 - 12) You need to evaluate an expression (i.e., parse).
 
@@ -115,7 +115,7 @@ In each of the following examples, please choose the best data structure(s).
 - 15) To implement printer spooler so that jobs can be printed in the order of their arrival.
 
     Ans: Queue
-        - First in First out principle. 
+        - First in First out principle since jobs have to be printed in the order of arrival. 
 
 - 16) To implement back functionality in the internet browser.
 
