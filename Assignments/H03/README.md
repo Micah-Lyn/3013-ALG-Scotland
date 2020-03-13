@@ -14,31 +14,31 @@
 - Complexities : **O(1), O(n log n), O(n), O(n<sup>2</sup>), O(log n), O(n!) , O(h)**
 - 1) Finding the max element in an unordered stack would require O(n) operations?
 
-     All elements may have to be looked at.
+     - All elements may have to be looked at.
 
 - 2) Finding the min element in an unordered queue would require O(n) operations?
 
-     All elements may have to be looked at.
+     - All elements may have to be looked at.
 
 - 3) Finding some element in some Binary Search Tree would require O(h) operations?
 
-     You may have to search through the height of the tree.
+     - You may have to search through the height of the tree.
 
 - 4) Finding some element in a balanced Binary Search Tree would require  O(log n) operations?
 
-    The tree is balanced hence, a binary search can be performed.
+    - The tree is balanced hence, a binary search can be performed.
 
 - 5) Finding some element in an ordered linked list would require O(n) operations (worst case)?
 
-    Worst case, therefore all elements would have to be looked at.
+    - Worst case, therefore all elements would have to be looked at.
 
 - 6) Finding some element in an ordered linked list would require  O(n/2) operations (average case)?
 
-    On average if there is an ordered list, the search can stop at n/2.
+    - On average if there is an ordered list, the search can stop at n/2.
 
 - 7) Finding some element in an unordered linked list would require  O(n) operations (worst case)?
 
-    Worst case, therefore all elements would have to be looked at. Also, the elements are unordered.
+    - Worst case, therefore all elements would have to be looked at. Also, the elements are unordered.
 
 
 - 8) For each of the following, count the number of operations where some_statement is executed based on the loops
