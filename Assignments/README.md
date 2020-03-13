@@ -7,4 +7,5 @@
 | 04     | [04 - StackResize](https://github.com/Micah-Lyn/3013-ALG-Scotland/tree/master/Assignments/04-StackResize)    |Resizing an array based stack |
 | 05    | [PO2 - ProcessingLinearTime](https://github.com/Micah-Lyn/3013-ALG-Scotland/tree/master/Assignments/05-P02%20ProcessingLinearTime)    |Processing linear time|
 | 07    | [HO2 - Heapify Debacle](https://github.com/Micah-Lyn/3013-ALG-Scotland/blob/master/Assignments/07-%20H02%20HeapifyDebacle/heap_from_class.cpp)    |Completing heap from class|
+| 09    | [HO3 - Data Structures and Complexity](https://github.com/Micah-Lyn/3013-ALG-Scotland/blob/master/Assignments/09-H03/README.md)    |Filling in Data Structures and Complexity|
 
