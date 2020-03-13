@@ -97,55 +97,55 @@ In each of the following examples, please choose the best data structure(s).
 - 11) You need to store undo/redo operations in a word processor.
 
     Ans: Stack
-       Last in first out principle. 
+       - Last in first out principle. 
 
 - 12) You need to evaluate an expression (i.e., parse).
 
     Ans: Stack
-        Push on the stack then start popping and matching.
+       - Push on the stack then start popping and matching.
 
 - 13) You need to store the friendship information on a social networking site. I.e., who is friends with who.
 
     Ans: Graphs
-        Nodes connected to know who is friends with who.
+       - Nodes connected to know who is friends with who.
 
 - 14) You need to store an image (1000 by 1000 pixels) as a bitmap.
 
     Ans: Array
-        More specifically, 2-D Array - quick and easy access to each pixels.
+       - More specifically, 2-D Array - quick and easy access to each pixels.
 
 - 15) To implement printer spooler so that jobs can be printed in the order of their arrival.
 
     Ans: Queue
-        First in First out principle. 
+        - First in First out principle. 
 
 - 16) To implement back functionality in the internet browser.
 
     Ans: Stack
-        Back can be implemented by popping off the stack.
+       - Back can be implemented by popping off the stack.
 
 - 17) To store the possible moves in a chess game.
 
     Ans: Graph
-        Directional graph could store current state to possible next move.
+       - Directional graph could store current state to possible next move.
 
 - 18) To store a set of fixed key words which are referenced very frequently.
 
     Ans: Hash Table
-        Hash create a function that maps fixed values into a bin. If you know the hash function and 
-        key words coming in, has it to its bin. It is order 1 lookup.
+       - Hash create a function that maps fixed values into a bin. If you know the hash function and 
+         key words coming in, has it to its bin. It is order 1 lookup.
 
 - 19) To store the customer order information in a drive-in burger place. (Customers keep on coming and they have to get their correct food at the payment/food collection window.)
 
     Ans: Queue
-        First in first out principle since its a drive-in order.
+       - First in first out principle since its a drive-in order.
 
 - 20) To store the genealogy information of biological species.
 
     Ans: Tree
-        A hierarchical tree since it is dealing with genealogy.
+       - A hierarchical tree since it is dealing with genealogy.
 
 - 21) To store an alphabetized list of names in order to look up quickly.
 
    Ans: Tree 
-        Look up time will be less if its a balanced binary search tree.
+       - Look up time will be less if its a balanced binary search tree.
