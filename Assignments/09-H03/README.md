@@ -2,16 +2,17 @@
 #### Due: 03-13-2020 (Friday @ 3:30 p.m.)
 
 - Given a collection of algorithms that runs on **O(1), O(n log n), O(n), O(n<sup>2</sup>), O(log n), O(n!)**, order the algorithms from fastest to slowest.
+    
 - Suppose that the complexity of an algorithm is O(n<sup>2</sup>). Suppose that the program that uses the algorithm run in 10 seconds for a data set of size n. If the data size is doubled, how long will it take (approximately) to run the program? 
 
 
 - Complexities : **O(1), O(n log n), O(n), O(n<sup>2</sup>), O(log n), O(n!) , O(h)**
-- 1) Finding the max element in an unordered stack would require _____________ operations?
-- 2) Finding the min element in an unordered queue would require _____________ operations?
-- 3) Finding some element in some Binary Search Tree would require _____________ operations?
-- 4) Finding some element in a balanced Binary Search Tree would require _____________ operations?
-- 5) Finding some element in an ordered linked list would require _____________ operations (worst case)?
-- 6) Finding some element in an ordered linked list would require _____________ operations (average case)?
+- 1) Finding the max element in an unordered stack would require ________O(n)_____ operations?
+- 2) Finding the min element in an unordered queue would require ______o(n)_______ operations?
+- 3) Finding some element in some Binary Search Tree would require _____O(h)_______ operations?
+- 4) Finding some element in a balanced Binary Search Tree would require ______O(logn)_______ operations?
+- 5) Finding some element in an ordered linked list would require _____O(n)________ operations (worst case)?
+- 6) Finding some element in an ordered linked list would require ______O(n/2)______ operations (average case)?
 - 7) Finding some element in an unordered linked list would require _____________ operations (worst case)?
 
 
