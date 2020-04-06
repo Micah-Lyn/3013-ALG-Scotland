@@ -74,9 +74,9 @@ int main(int argc, char **argv)
 
     cin.ignore();
     cin.ignore();
-    
 
-    while(caseCount < cases) {
+    while (caseCount < cases)
+    {
 
         // input character/ largest node
         cin >> largestNode;
@@ -92,7 +92,8 @@ int main(int argc, char **argv)
         string edge;
 
         // loop to get edges to load unto vector
-        while (getline(cin, edge) && edge != "") {
+        while (getline(cin, edge) && edge != "")
+        {
 
             // subtract A from where it should start
             m = edge[0] - int('A');
@@ -104,26 +105,26 @@ int main(int argc, char **argv)
 
         // As long as there are unvisited nodes start a dfs on them
         counter = 0;
-        
-        for (int i = 0; i < (node + 1); i++) {
 
-            if (been_visited[i] == UNVISITED) {
+        for (int i = 0; i < (node + 1); i++)
+        {
+
+            if (been_visited[i] == UNVISITED)
+            {
                 dfs(i);
                 // Counts the amount of time dfs is called
                 // inorder to get the amount of subgraphs
                 counter++;
-               
             }
         }
         cout << counter << endl;
-        
-       
-       caseCount++;
 
-       if(caseCount != cases) {
-         cout << endl;
-       }
+        caseCount++;
 
+        if (caseCount != cases)
+        {
+            cout << endl;
+        }
 
         // Clear structures used
         been_visited.clear();
@@ -132,5 +133,3 @@ int main(int argc, char **argv)
 
     return 0;
 }
-
-
