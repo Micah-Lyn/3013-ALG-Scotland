@@ -36,7 +36,7 @@ int main()
 
         cTime *= 2;
 
-        int tot = 0, act = 0, i = 0;
+        int amt = 0, a = 0, i = 0;
 
         while (i < mLines)
         {
@@ -53,22 +53,23 @@ int main()
         while (m < mLines)
         {
 
-            if (tot > car[m])
+            if (amt > car[m])
             {
-                act = tot;
+                a = amt;
             }
 
-            else if (tot < car[m])
+            else if (amt < car[m])
             {
-                act = car[m];
+                a = car[m];
             }
 
-            tot = act + cTime;
+            amt = a + cTime;
 
             m += nCars;
         }
 
-        present = tot - cTime / 2;
+        present = amt - cTime / 2;
+        
         travel = (mLines + nCars - 1) / nCars;
 
         cout << present << " " << travel << '\n';
