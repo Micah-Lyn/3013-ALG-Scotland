@@ -30,7 +30,7 @@ int main()
 
         cin >> ferry;
 
-        ferry *= 100; 
+        ferry *= 100;
 
         int num = 1, carL[2001], tot[2001] = {};
 
