@@ -44,8 +44,10 @@ int main()
 
         pair<int, int> ii = make_pair(0, 0);
 
-        //pSide turns to 1 for if cars ranging from one to i are loaded based on the length(j) to the right side of the ferry
+        //pSide turns to 1 for if cars ranging from one to i are loaded based 
+        //on the length(j) to the right side of the ferry
         vector<vector<int>> pSide(num, vector<int>(ferry + 1, 0));
+        
         // stores whether the cars went on starboard size or port size
         vector<vector<string>> carSet(pSide.size(), vector<string>(pSide[0].size(), ""));
 
