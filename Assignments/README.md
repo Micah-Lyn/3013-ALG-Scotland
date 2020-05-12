@@ -8,10 +8,10 @@
 | 05    | [PO2 - ProcessingLinearTime](https://github.com/Micah-Lyn/3013-ALG-Scotland/tree/master/Assignments/05-P02%20ProcessingLinearTime)    |Processing linear time|
 | 07    | [HO2 - Heapify Debacle](https://github.com/Micah-Lyn/3013-ALG-Scotland/blob/master/Assignments/07-%20H02%20HeapifyDebacle/heap_from_class.cpp)    |Completing heap from class|
 | 09    | [HO3 - Data Structures and Complexity](https://github.com/Micah-Lyn/3013-ALG-Scotland/blob/master/Assignments/09-H03/README.md)    |Filling in Data Structures and Complexity|
-| 10    | [459](https://github.com/Micah-Lyn/3013-ALG-Scotland/tree/master/Assignments/459)    |Graph Connectivity|
-| 11    | [484](https://github.com/Micah-Lyn/3013-ALG-Scotland/tree/master/Assignments/484)    |STL Maps|
-| 12    | [11597](https://github.com/Micah-Lyn/3013-ALG-Scotland/tree/master/Assignments/11597)    |Spanning Subtrees|
-| 13    | [1112](https://github.com/Micah-Lyn/3013-ALG-Scotland/tree/master/Assignments/1112)    |Shortest Path|
+| 10    | [P04-459](https://github.com/Micah-Lyn/3013-ALG-Scotland/tree/master/Assignments/459)    |Graph Connectivity|
+| 11    | [P05-484](https://github.com/Micah-Lyn/3013-ALG-Scotland/tree/master/Assignments/484)    |STL Maps|
+| 12    | [P06-11597](https://github.com/Micah-Lyn/3013-ALG-Scotland/tree/master/Assignments/11597)    |Spanning Subtrees|
+| 13    | [P07-1112](https://github.com/Micah-Lyn/3013-ALG-Scotland/tree/master/Assignments/1112)    |Shortest Path|
 | 14    | [FerryLoading](https://github.com/Micah-Lyn/3013-ALG-Scotland/tree/master/Assignments/FerryLoading)    |Problem 1,2,3|
 
 
